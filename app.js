@@ -5,6 +5,7 @@ const Thing = require('./models/thing');
 const app = express();
 const stuffRoutes = require('./routes/stuff');
 const userRoutes = require('./routes/user');
+const dbPass = '012345';
 
 mongoose.connect('mongodb+srv://Cleemzy:'+dbPass+'@cluster0.9pgiy.mongodb.net/Cluster0?retryWrites=true&w=majority',
   { useNewUrlParser: true,
